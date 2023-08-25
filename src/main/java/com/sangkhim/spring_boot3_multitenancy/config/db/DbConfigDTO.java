@@ -1,4 +1,4 @@
-package com.sangkhim.spring_boot3_multitenancy.config;
+package com.sangkhim.spring_boot3_multitenancy.config.db;
 
 import javax.sql.DataSource;
 import lombok.Getter;

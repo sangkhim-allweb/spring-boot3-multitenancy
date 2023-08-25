@@ -1,4 +1,4 @@
-package com.sangkhim.spring_boot3_multitenancy.config;
+package com.sangkhim.spring_boot3_multitenancy.config.db;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Getter
 @Setter
 @ConfigurationProperties(prefix = "db")
-public class DbConfig {
+public class DbConfigProp {
 
   private Map<String, DbConfigDTO> configurations = new HashMap<>();
 
