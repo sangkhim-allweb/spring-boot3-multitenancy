@@ -11,12 +11,12 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @EnableConfigurationProperties(DbConfig.class)
 @RequiredArgsConstructor
-public class SpringBoot3H2Application {
+public class SpringBoot3MultitenancyApplication {
 
   private final DbConfig dbConfig;
 
   public static void main(String[] args) {
-    SpringApplication.run(SpringBoot3H2Application.class, args);
+    SpringApplication.run(SpringBoot3MultitenancyApplication.class, args);
   }
 
   @Bean
