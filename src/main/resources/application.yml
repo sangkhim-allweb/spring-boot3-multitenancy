@@ -27,12 +27,12 @@ spring:
 db:
   configurations:
     en:
-      url: jdbc:mysql://127.0.0.1:13306/blog?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&allowPublicKeyRetrieval=true&useSSL=false
+      url: jdbc:mysql://127.0.0.1:13306/blog?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
       driver: com.mysql.cj.jdbc.Driver
       username: root
       password: root
     fr:
-      url: jdbc:mysql://127.0.0.1:13306/blog_fr?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&allowPublicKeyRetrieval=true&useSSL=false
+      url: jdbc:mysql://127.0.0.1:13306/blog_fr?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
       driver: com.mysql.cj.jdbc.Driver
       username: root
       password: root
