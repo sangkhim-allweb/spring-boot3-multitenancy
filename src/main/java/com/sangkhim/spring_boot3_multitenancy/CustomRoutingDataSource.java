@@ -6,6 +6,6 @@ public class CustomRoutingDataSource extends AbstractRoutingDataSource {
 
   @Override
   protected Object determineCurrentLookupKey() {
-    return "en";
+    return "fr";
   }
 }
