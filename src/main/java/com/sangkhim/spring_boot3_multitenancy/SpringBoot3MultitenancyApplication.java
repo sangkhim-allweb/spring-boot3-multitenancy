@@ -11,7 +11,7 @@ public class SpringBoot3MultitenancyApplication {
   public static final Properties defaultProperties = new Properties();
 
   public static void main(String[] args) {
-    defaultProperties.setProperty("lang", "fr");
+    defaultProperties.setProperty("lang", "en");
 
     SpringApplication.run(SpringBoot3MultitenancyApplication.class, args);
   }
