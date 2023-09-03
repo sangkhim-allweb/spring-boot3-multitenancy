@@ -1,7 +1,6 @@
 package com.sangkhim.spring_boot3_multitenancy.config.db;
 
 import javax.sql.DataSource;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableConfigurationProperties(DbConfigProperty.class)
 @RequiredArgsConstructor
-@Getter
 public class DbConfig {
 
   private final DbConfigProperty dbConfigProperty;
