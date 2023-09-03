@@ -1,5 +1,6 @@
 package com.sangkhim.spring_boot3_multitenancy.service;
 
+import com.sangkhim.spring_boot3_multitenancy.SpringBoot3MultitenancyApplication;
 import com.sangkhim.spring_boot3_multitenancy.exception.BadRequestException;
 import com.sangkhim.spring_boot3_multitenancy.exception.DataNotFoundException;
 import com.sangkhim.spring_boot3_multitenancy.model.entity.Author;
@@ -18,6 +19,8 @@ public class AuthorService {
   private final AuthorRepository authorRepository;
 
   public List<Author> getAllAuthors() {
+    SpringBoot3MultitenancyApplication.defaultProperties.setProperty("lang", "en");
+
     List<Author> authorList = authorRepository.findAll();
     return authorList;
   }

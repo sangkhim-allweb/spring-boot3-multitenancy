@@ -15,6 +15,13 @@ public class DbConfigDTO {
   private String password;
 
   public DataSource createDataSource() {
+    // DriverManagerDataSource dataSource = new DriverManagerDataSource();
+    // dataSource.setDriverClassName(driver);
+    // dataSource.setUrl(url);
+    // dataSource.setUsername(username);
+    // dataSource.setPassword(password);
+    // return dataSource;
+
     return DataSourceBuilder.create()
         .driverClassName(driver)
         .url(url)

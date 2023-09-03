@@ -1,5 +1,6 @@
 package com.sangkhim.spring_boot3_multitenancy.service;
 
+import com.sangkhim.spring_boot3_multitenancy.SpringBoot3MultitenancyApplication;
 import com.sangkhim.spring_boot3_multitenancy.exception.BadRequestException;
 import com.sangkhim.spring_boot3_multitenancy.exception.DataNotFoundException;
 import com.sangkhim.spring_boot3_multitenancy.model.entity.Tag;
@@ -18,6 +19,8 @@ public class TagService {
   private final TagRepository tagRepository;
 
   public List<Tag> getAllTags() {
+    SpringBoot3MultitenancyApplication.defaultProperties.setProperty("lang", "fr");
+
     List<Tag> tagList = tagRepository.findAll();
     return tagList;
   }
