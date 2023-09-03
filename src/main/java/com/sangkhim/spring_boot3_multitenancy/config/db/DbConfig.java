@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 @Configuration
 @EnableConfigurationProperties(DbConfigProp.class)
@@ -19,10 +18,5 @@ public class DbConfig {
     CustomRoutingDataSource dataSource = new CustomRoutingDataSource();
     dataSource.setTargetDataSources(dbConfigProp.createTargetDataSources());
     return dataSource;
-  }
-
-  @Bean
-  public DataSourceTransactionManager transactionManager() {
-    return new DataSourceTransactionManager(dataSource());
   }
 }
