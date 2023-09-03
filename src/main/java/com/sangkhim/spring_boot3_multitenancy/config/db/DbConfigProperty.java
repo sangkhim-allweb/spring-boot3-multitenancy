@@ -9,9 +9,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Getter
 @Setter
 @ConfigurationProperties(prefix = "db")
-public class DbConfigProp {
+public class DbConfigProperty {
 
-  private Map<String, DbConfigDTO> configurations = new HashMap<>();
+  private Map<String, DbConfigDataSource> configurations = new HashMap<>();
 
   public Map<Object, Object> createTargetDataSources() {
     Map<Object, Object> result = new HashMap<>();
